@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портал в ВЧ — защита ИИ-кэмпа</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="preza.css">
+</head>
+<body>
+<div class="stage" id="stage">
+  <svg class="supr" id="supr" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b5bdb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+      <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+      <linearGradient id="gTeal" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+      <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient>
+      <radialGradient id="gSun" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#c4b5fd"/><stop offset=".55" stop-color="#7c3aed"/><stop offset="1" stop-color="#3b5bdb"/></radialGradient>
+    </defs>
+    <g class="f" data-k="square"><g class="in"><rect class="trail" x="-110" y="-110" width="220" height="220"/><rect class="pl" x="-130" y="-130" width="220" height="220" fill="url(#gBlue)"/></g></g>
+    <g class="f" data-k="bar"><g class="in"><rect class="trail" x="-270" y="-24" width="540" height="56"/><rect class="pl" x="-280" y="-34" width="540" height="56" fill="url(#gViolet)"/></g></g>
+    <g class="f" data-k="sun"><g class="in"><circle class="trail" cx="12" cy="12" r="96"/><circle class="pl" cx="0" cy="0" r="96" fill="url(#gSun)"/></g></g>
+    <g class="f" data-k="small"><g class="in"><rect class="trail" x="-44" y="-44" width="88" height="88"/><rect class="pl" x="-54" y="-54" width="88" height="88" fill="url(#gTeal)"/></g></g>
+    <g class="f" data-k="line"><g class="in"><rect class="pl ink" x="-380" y="-4" width="760" height="8"/></g></g>
+    <g class="f" data-k="cross"><g class="in"><rect class="pl ink" x="-90" y="-14" width="180" height="28"/><rect class="pl ink" x="-14" y="-90" width="28" height="180"/></g></g>
+    <g class="f" data-k="trap"><g class="in"><path class="trail" d="M-150 70 L-90 -60 L170 -60 L150 70 Z"/><path class="pl" d="M-162 58 L-102 -72 L158 -72 L138 58 Z" fill="url(#gSky)"/></g></g>
+    <g class="f" data-k="ring"><g class="in"><circle class="pl ring" cx="0" cy="0" r="150"/></g></g>
+    <g class="f" data-k="bars"><g class="in"><rect class="pl" x="-120" y="-40" width="240" height="14" fill="#3b5bdb"/><rect class="pl" x="-80" y="-6" width="200" height="14" fill="#7c3aed"/><rect class="pl" x="-140" y="28" width="150" height="14" fill="#2dd4bf"/></g></g>
+    <g class="f" data-k="lilac"><g class="in"><rect class="trail" x="-60" y="-150" width="130" height="300"/><rect class="pl" x="-72" y="-162" width="130" height="300" fill="#c4b5fd"/></g></g>
+    <g class="f" data-k="half"><g class="in"><path class="trail" d="M-110 12 A110 110 0 0 1 110 12 Z"/><path class="pl" d="M-122 0 A110 110 0 0 1 98 0 Z" fill="url(#gTeal)"/></g></g>
+    <g class="f" data-k="line2"><g class="in"><rect class="pl" x="-300" y="-3" width="600" height="6" fill="#7c3aed"/></g></g>
+    <g class="f" data-k="dot"><g class="in"><circle class="pl" cx="0" cy="0" r="30" fill="#16131f"/></g></g>
+  </svg>
+
+  <section class="slide s1">
+    <p class="kick">ИИ-кэмп 2026 · защита проекта</p>
+    <h1>Портал<br><em>в ВЧ</em></h1>
+    <p class="lead">Правила, видео и тесты для выездных — в том же приложении, где они получают заказы</p>
+    <div class="team">
+      <div><span>Лидер</span><b>Никита Зарипов</b></div>
+      <div><span>Наставник</span><b>Мария Голубкова</b></div>
+    </div>
+    <div class="pair">
+      <div class="card"><span>Кому помогает</span>Реализации и руководству — видно, кто из выездных знает правила, а кто нет</div>
+      <div class="card"><span>Задача в декабре</span>На выезды сезона корпоративов едут люди с подтверждённой квалификацией</div>
+    </div>
+  </section>
+
+  <section class="slide s2">
+    <p class="num">02</p>
+    <h2>Как работали <em>до внедрения</em></h2>
+    <div class="rows">
+      <div class="row head"><span>Как было</span><span>Последствие</span></div>
+      <div class="row"><b>Правила — в чатах, файлах и на словах старшего</b><span>У каждого своя версия правил</span></div>
+      <div class="row"><b>Инструктаж перед выездом повторяют руками</b><span>Время старших и реализаторов</span></div>
+      <div class="row"><b>Портал Никиты — отдельный сайт со своим входом</b><span>Ещё один пароль, люди до него не доходят</span></div>
+      <div class="row"><b>Кто прочитал и понял — неизвестно</b><span>На выезд ставим вслепую</span></div>
+    </div>
+    <p class="foot">Исходных замеров нет: до портала прочтение и знание правил не фиксировались нигде — точка отсчёта «0 подтверждённых»</p>
+  </section>
+
+  <section class="slide s3">
+    <p class="num">03</p>
+    <h2>Как работает <em>решение</em></h2>
+    <ol class="steps">
+      <li><i>1</i><b>Вкладка «Портал» в ВЧ</b><span>Тот же вход, что для заказов и чатов</span></li>
+      <li><i>2</i><b>Прочитать или досмотреть</b><span>«Ознакомлен» — только после досмотра видео</span></li>
+      <li><i>3</i><b>Сдать тест по теме</b><span>Пояснения к ответам, попытки сохраняются</span></li>
+      <li><i>4</i><b>Квалификация подтверждена</b><span>Менеджер видит её, когда ставит на выезд</span></li>
+    </ol>
+    <div class="qr">
+      <img src="media/qr.svg" alt="">
+      <p><b>Открыть портал</b>vyzovchat.ru/study</p>
+    </div>
+  </section>
+
+  <section class="slide s4">
+    <p class="num">04</p>
+    <h2>Что запущено <em>и кто пользуется</em></h2>
+    <div class="stats">
+      <div><b>16.11</b><span>запуск на проде</span></div>
+      <div><b>773</b><span>выездных специалиста в охвате</span></div>
+      <div><b>8</b><span>материалов в 3 разделах, с видео</span></div>
+      <div><b>3 / 32</b><span>теста / вопроса</span></div>
+    </div>
+    <ul class="ticks">
+      <li>Разделы, материалы с текстом и видео, «Ознакомлен», тесты с пояснениями</li>
+      <li>Обзор для руководства: кто не готов — по компаниям, трудные вопросы</li>
+      <li>При постановке на мероприятие без квалификации ВЧ переспрашивает «точно?»</li>
+    </ul>
+    <div class="card limit"><span>Ограничения</span>Пока одна квалификация — «Выездной специалист». Остальные роли портала ждут материалов</div>
+  </section>
+
+  <section class="slide s5">
+    <p class="num">05</p>
+    <h2>Первые результаты — <em>до и после</em></h2>
+    <div class="rows four">
+      <div class="row head"><span>Показатель</span><span>До</span><span>Первые сутки</span><span>Цель</span></div>
+      <div class="row"><b>Квалификация подтверждена</b><span>0 — не фиксировалось</span><span class="fact">9 человек</span><span class="goal">все на выездах декабря</span></div>
+      <div class="row"><b>Сдавали тесты</b><span>—</span><span class="fact">10 человек, 4 компании</span><span class="goal">773</span></div>
+      <div class="row"><b>Средний балл</b><span>—</span><span class="fact">99%, ни одной несдачи</span><span class="goal">от 80% на тест</span></div>
+    </div>
+    <p class="foot">Данные — обзор портала в ВЧ на 17.11, после первых суток работы. Попытки руководства в цифры не входят</p>
+  </section>
+
+  <section class="slide s6">
+    <p class="num">06</p>
+    <h2>Какой эффект <em>ожидаем в декабре</em></h2>
+    <div class="pair">
+      <div class="card big"><b>Меньше нарушений на заказе</b><p class="formula">претензии по поведению и внешнему виду<br><small>до − после</small> × цена претензии</p></div>
+      <div class="card big"><b>Освобождённое время</b><p class="formula">время инструктажа перед выездом<br><small>×</small> число выездов в декабре</p></div>
+    </div>
+    <p class="foot">Допущения: претензии берём из Службы контроля в ВЧ, время инструктажа уточняем у реализаторов. Считаем только выездных специалистов</p>
+  </section>
+
+  <section class="slide s7">
+    <p class="num">07</p>
+    <h2>Как обеспечим <em>использование в декабре</em></h2>
+    <div class="grid4">
+      <div class="card"><span>Кто</span>Все выездные специалисты — до первого выезда сезона</div>
+      <div class="card"><span>Доступ</span>Вкладка «Портал» в ВЧ — без новых логинов и установок</div>
+      <div class="card"><span>Обучение</span>Реализаторы зовут в портал при постановке, ВЧ переспрашивает про тех, кто без квалификации</div>
+      <div class="card"><span>Ответственный</span>Никита Зарипов</div>
+    </div>
+    <p class="foot">Цель: у каждого, кто выходит на выезд в декабре, квалификация подтверждена</p>
+  </section>
+
+  <section class="slide s8">
+    <p class="num">08</p>
+    <h2>Что нужно доделать <em>до сезона</em></h2>
+    <div class="rows">
+      <div class="row head"><span>Доработка</span><span>Ответственные</span></div>
+      <div class="row"><b>Материалы и тесты для остальных ролей</b><span>Команда Никиты Зарипова</span></div>
+      <div class="row"><b>Напоминание тем, кто не прошёл, перед выездом</b><span>Разработка ВЧ</span></div>
+      <div class="row"><b>Договориться с реализацией: без квалификации — только по решению</b><span>Руководство, реализация</span></div>
+    </div>
+  </section>
+
+  <section class="slide s9">
+    <p class="num">09</p>
+    <h2>Как подтвердим <em>итог декабря</em></h2>
+    <div class="rows three">
+      <div class="row head"><span>Метрика</span><span>Цель декабря</span><span>Источник</span></div>
+      <div class="row"><b>Доля выездов с подтверждённой квалификацией</b><span class="goal">100%</span><span>Обзор портала + смены в ВЧ</span></div>
+      <div class="row"><b>Претензии по поведению и внешнему виду</b><span class="goal">Меньше, чем в ноябре</span><span>Служба контроля в ВЧ</span></div>
+      <div class="row"><b>Трудные вопросы</b><span>Разобраны в материалах</span><span>Статистика тестов портала</span></div>
+    </div>
+    <p class="foot">Итоги — к концу декабря, ответственный Никита Зарипов</p>
+  </section>
+
+  <section class="slide s10">
+    <p class="num">10</p>
+    <h2>Итог <em>и обязательства команды</em></h2>
+    <p class="quote">Правила у компании были всегда. Теперь видно, кто их знает, — прямо там, где ставят на выезд</p>
+    <div class="grid3">
+      <div class="card"><span>Работает</span>Портал внутри ВЧ: материалы, видео с досмотром, тесты, квалификации, обзор для руководства</div>
+      <div class="card"><span>Ждём в декабре</span>Все выездные сезона — с подтверждённой квалификацией, претензий по поведению меньше</div>
+      <div class="card"><span>Обязуемся</span>Наполнить портал для остальных ролей и зафиксировать результат по данным ВЧ</div>
+    </div>
+    <p class="thanks">Спасибо!</p>
+  </section>
+
+  <div class="pager" id="pager"></div>
+</div>
+<div class="black" id="black" hidden></div>
+<script src="preza.js"></script>
+</body>
+</html>
