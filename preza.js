@@ -89,6 +89,14 @@
 
   demo.addEventListener('click', function () { if (demo.paused) demo.play(); else demo.pause(); });
 
+  // музыка на всю презентацию — «хулиган качает» из нашей папки петлёй. Браузер не даёт звук без действия
+  // человека, поэтому она начинается с первого нажатия кликера или щелчка; на чёрном экране — пауза
+  var music = document.getElementById('music');
+  ['keydown', 'pointerdown'].forEach(function (t) {
+    addEventListener(t, function () { if (music.paused && black.hidden) music.play().catch(function () {}); });
+  });
+  new MutationObserver(function () { if (black.hidden) music.play().catch(function () {}); else music.pause(); }).observe(black, { attributes: true, attributeFilter: ['hidden'] });
+
   var hideT;
   addEventListener('mousemove', function () {
     document.body.classList.add('mouse');
