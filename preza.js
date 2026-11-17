@@ -1,6 +1,6 @@
 (function () {
   var stage = document.getElementById('stage'), slides = [].slice.call(document.querySelectorAll('.slide'));
-  var pager = document.getElementById('pager'), black = document.getElementById('black');
+  var pager = document.getElementById('pager'), black = document.getElementById('black'), demo = document.getElementById('demo');
   var figs = [].slice.call(document.querySelectorAll('.supr .f'));
 
   // одна супрематическая композиция: [x, y] в долях зоны, поворот, масштаб — порядок как в svg
@@ -13,7 +13,7 @@
   var ZONE = [
     [1340, 70, 500, 940, 1.05, 0, 0],
     [1440, 90, 400, 880, .8, 18, 1],
-    [1260, 110, 580, 840, 1, -14, 0],
+    [1150, 60, 760, 960, .85, -14, 0],
     [1500, 80, 360, 900, .72, 34, 1],
     [1500, 120, 320, 840, .7, -22, 0],
     [1380, 90, 470, 900, .9, 8, 1],
@@ -58,6 +58,7 @@
     slides[i].classList.add('on');
     [].forEach.call(pager.children, function (d, k) { d.classList.toggle('on', k === i); });
     compose(i);
+    if (slides[i].classList.contains('s3')) { demo.currentTime = 0; demo.play().catch(function () {}); } else demo.pause();
     history.replaceState(null, '', '#' + (i + 1));
   }
 
@@ -85,6 +86,8 @@
     else if (k === 'Home') go(0);
     else if (k === 'End') go(slides.length - 1);
   });
+
+  demo.addEventListener('click', function () { if (demo.paused) demo.play(); else demo.pause(); });
 
   var hideT;
   addEventListener('mousemove', function () {
